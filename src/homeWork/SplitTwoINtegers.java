@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SplitTwoINtegers {
 
     public static void main(String[] args) {
-        int a,i;
+        int a,i=0 ,j;
 
         Scanner scan = new Scanner(System.in);
 
@@ -15,12 +15,11 @@ public class SplitTwoINtegers {
 
         while (a > 0) {
 
-            i= a % 10;
-
+            i = a % 10;
             System.out.println(i);
 
             a = a / 10;
-            System.out.println(a);
+           // System.out.println(a);
 
         }
     }

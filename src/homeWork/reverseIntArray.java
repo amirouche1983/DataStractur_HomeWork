@@ -33,21 +33,22 @@ Expected Result : [1]
     public static void main(String[] args) {
      //   System.out.println("Original Array:");
         int[] Array = {-1, -3, 5, 77, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 99};
-      //  printReverseArray(Array);
-//        System.out.println("\n*****************");
- //       reverse_array(Array, Array.length);
-//        System.out.println("\n*****************");
-//        //function call to reverse the array
-//        reverseArray(Array, Array.length);
-//        System.out.println("*****************");
-//
-//        //reverse a String Arrayy
-//        String[] stArray = {"one", "Two", "Three", "Four", "Five", "Six", "Seven"};
-//        System.out.println("Original Array:" + Arrays.asList(stArray));
-//        reverse(stArray);
-//        System.out.println("*****************");
-////        //print the original array
-////        System.out.println("Original Array: \n" + Arrays.toString(Array));
+        printReverseArray(Array);
+        System.out.println("\n*****************");
+        reverse_array(Array, Array.length);
+        System.out.println("\n*****************");
+        //function call to reverse the array
+        reverseArray(Array, Array.length);
+        System.out.println("*****************");
+
+        //reverse a String Arrayy
+        String[] stArray = {"one", "Two", "Three", "Four", "Five", "Six", "Seven"};
+        System.out.println("Original Array:" + Arrays.asList(stArray));
+        reverse(stArray);
+        System.out.println("*****************");
+//        //print the original array
+//        System.out.println("Original Array: \n" + Arrays.toString(Array));
+
 
     }
 
@@ -83,7 +84,7 @@ Expected Result : [1]
 
     /*swap the first elemnt of array with the last element; second element with second last and so on*/
     static void reverseArray(int Array[], int size) {
-        int i, k, temp;
+        int i, temp;
         for (i = 0; i < size / 2; i++) {
             temp = Array[i];
             Array[i] = Array[size - i - 1];

@@ -18,6 +18,9 @@ public class FactorialNumberUsingRecursion {
         }
         else return 1;
     }
+   // result=4*factorial(4-1)-->result=4*factorial(3)-->3*factorial(2)-->2*factorial(1)
+    //      =                            4*3 *2*1
+    //result= 24
     /* example to understand how the recursion works
 ex: num =4
 while num is > 1 it return [to 4 * multiplyNumbers(4- 1)] then it calls multiplyNumbers(int 3) again
